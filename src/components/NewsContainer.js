@@ -16,7 +16,7 @@ const NewsContainer = ({ news }) => {
                     <img tw="w-full" src={item.urlToImage} alt={item.title} />
                     <div tw="px-6 py-4">
                         <p tw="text-gray-700 text-base">
-                            { `${item.description.slice(0, 100)}...` }
+                            { `${item.description.slice(0, 150)}...` }
                         </p>
                         
                     </div>
