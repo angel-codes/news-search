@@ -1,4 +1,4 @@
-# News Searc
+# News Search App - React.js
 
 Simple React app to search news by category (news api).
 
