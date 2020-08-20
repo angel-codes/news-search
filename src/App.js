@@ -2,6 +2,7 @@ import React, { Fragment, useState, useEffect } from 'react';
 
 // Components
 import Header from './components/Header';
+import NewsContainer from './components/NewsContainer';
 
 function App() {
 
@@ -28,6 +29,9 @@ function App() {
         <Fragment>
             <Header
                 setCategory={setCategory}
+            />
+            <NewsContainer
+                news={news}
             />
         </Fragment>
     );

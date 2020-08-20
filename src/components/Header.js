@@ -20,7 +20,7 @@ const Container = styled.header(() => [
     tw`h-56 md:h-64`
 ]);
 const Content = tw.div`h-full container mx-auto flex flex-col justify-center items-center`;
-const Title = tw.h1`text-3xl font-bold text-white leading-tight`;
+const Title = tw.h1`text-4xl font-bold text-white leading-tight`;
 const Button = styled.button(() => [
     `width: 20%;`,
     tw`bg-green-500 hover:bg-green-600 text-white font-bold tracking-wide rounded rounded-l-none`,
