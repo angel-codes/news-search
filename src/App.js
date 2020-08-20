@@ -11,7 +11,15 @@ function App() {
 
     useEffect(() => {
         const getNews = async () => {
-            console.log('Get the News')
+            const URL = `https://newsapi.org/v2/top-headlines?country=mx&category=${category}&apiKey=${process.env.REACT_APP_API_KEY}`;
+
+            // Fetch the data
+            const response = await fetch(URL);
+            const data = await response.json();
+            
+            // Save in the state
+            setNews(data.articles);
+
         };
         getNews();
     }, [category]);
