@@ -1,7 +1,8 @@
-import React from 'react';
 /** @jsx jsx **/
 import { jsx } from '@emotion/core';
+
 import tw, { styled } from 'twin.macro';
+import PropTypes from 'prop-types';
 
 // Images
 import background from '../images/bg.jpg';
@@ -26,7 +27,7 @@ const Button = styled.button(() => [
     tw`transition-all ease-in duration-300`
 ]);
 
-const Header = () => {
+const Header = ({ setCategory }) => {
 
     // Custom Hook
     const [ category, SelectCategory ] = useSelect('general', OPTIONS);
@@ -35,7 +36,7 @@ const Header = () => {
     const handleSubmit = e => {
         e.preventDefault();
 
-        console.log(category)
+        setCategory(category); // Send category to the App.js component
     }
 
     return (
@@ -55,5 +56,9 @@ const Header = () => {
         </Container>
     );
 }
- 
+
+Header.propTypes = {
+    setCategory: PropTypes.func.isRequired
+}
+
 export default Header;

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
 /** @jsx jsx **/
 import { jsx } from '@emotion/core';
-import tw, { css } from 'twin.macro';
+import { useState } from 'react';
+import tw from 'twin.macro';
 
 // Styled Components
 const Select = tw.select`block w-full appearance-none bg-white border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded rounded-r-none leading-tight focus:outline-none focus:bg-white focus:border-gray-500`;
